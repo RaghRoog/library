@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    display: grid;
+    grid-template-rows: 150px 10fr;
+}
+.book{
+    width: 350px;
+    height: 350px;
+    font-size: 2rem;
+    background-color: gray;
+    color: white;
+    border-radius: 5%;
+    box-shadow: 2px 2px 22px 5px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2%;
+    gap: 5%;
+}
+.books-container{
+    width: 100%;
+    height: minmax(90vh);
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.add-book{
+    background-color: lightgrey;
+    width: 20%;
+    height: 70%;
+    margin-bottom: 1%;
+    transition: 0.3s;
+}
+.add-book:hover{
+    background-color: white;
+}
+.header{
+    background-color: lightgray;
+    box-shadow: 2px 2px 23px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header div{
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+label{
+    color: white;
+}
+input{
+    width: 75%;
+    height: 25%;
+    margin-bottom: 2%;
+}
+.form-container{
+    display: none; 
+    background-color: gray;
+    position: fixed;
+    width: 500px;
+    height: 280px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -250px;
+    border-radius: 15px;
+}
+form button{
+    height: 10%;
+    width: 30%;
+}
+.form{
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    gap: 3px;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+}
+.delete-button{
+    height: 10%;
+    width: 50%;
+    background-color: gray;
+    color: white;
+    font-size: 1.5rem;
+}
+.delete-button:hover{
+    background-color: lightgrey;
+    font-weight: bold;
+    color: red;
+}
+.read-button{
+    height: 10%;
+    width: 50%;
+    color: white;
+    background-color: gray;
+    font-size: 1.5rem;
+}
